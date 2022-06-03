@@ -22,8 +22,7 @@
 
                 @foreach (Service srv in Model.Services)
                 {
-                    @if (srv.Id == 1)
-                    {
+                    
 
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                             <div class="icon-box">
@@ -32,57 +31,8 @@
                                 <p>@srv.Content</p>
                             </div>
                         </div>
-                    }
-                    else if (srv.Id == 2)
-                    {
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <div class="icon"><i class="@srv.Icon"></i></div>
-                                <h4><a asp-controller="Home" asp-action="Detail" asp-route-id="@srv.Id">@srv.Title</a></h4>
-                                <p>@srv.Content</p>
-                            </div>
-                        </div>
-                    }
-                    else if (srv.Id == 3)
-                    {
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <div class="icon"><i class="@srv.Icon"></i></div>
-                                <h4><a asp-controller="Home" asp-action="Detail" asp-route-id="@srv.Id">@srv.Title</a></h4>
-                                <p>@srv.Content</p>
-                            </div>
-                        </div>
-                    }
-                    else if (srv.Id == 4)
-                    {
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <div class="icon"><i class="@srv.Icon"></i></div>
-                                <h4><a asp-controller="Home" asp-action="Detail" asp-route-id="@srv.Id">@srv.Title</a></h4>
-                                <p>@srv.Content</p>
-                            </div>
-                        </div>
-                    }
-                    else if (srv.Id == 5)
-                    {
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <div class="icon"><i class="@srv.Icon"></i></div>
-                                <h4><a asp-controller="Home" asp-action="Detail" asp-route-id="@srv.Id">@srv.Title</a></h4>
-                                <p>@srv.Content</p>
-                            </div>
-                        </div>
-                    }
-                    else
-                    {
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <div class="icon"><i class="@srv.Icon"></i></div>
-                                <h4><a asp-controller="Home" asp-action="Detail" asp-route-id="@srv.Id">@srv.Title</a></h4>
-                                <p>@srv.Content</p>
-                            </div>
-                        </div>
-                    }
+                    
+                    
                 }
 
             </div>

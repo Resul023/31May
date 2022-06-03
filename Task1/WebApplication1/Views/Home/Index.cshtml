@@ -66,38 +66,15 @@
                 <div class="row">
                     @foreach (Featured fea in Model.Featureds)
                     {
-                        @if (fea.Id == 1)
-                        {
-                            <div class="col-lg-4">
-                                <div class="icon-box">
-                                    <i class="@fea.Icon"></i>
-                                    <h3><a href="">@fea.Title</a></h3>
-                                    <p>@fea.Content</p>
-                                </div>
-                            </div>
-                        }
+                        
+                          <div class="col-lg-4">
+                              <div class="icon-box">
+                                  <i class="@fea.Icon"></i>
+                                  <h3><a href="">@fea.Title</a></h3>
+                                  <p>@fea.Content</p>
+                              </div>
+                          </div>
 
-                        else if (fea.Id == 2)
-                        {
-                            <div class="col-lg-4 mt-4 mt-lg-0">
-                                <div class="icon-box">
-                                    <i class="@fea.Icon"></i>
-                                    <h3><a href="">@fea.Title</a></h3>
-                                    <p>@fea.Content</p>
-                                </div>
-                            </div>
-                        }
-
-                        else if (fea.Id == 3) 
-                        {
-                             <div class="col-lg-4 mt-4 mt-lg-0">
-                                 <div class="icon-box">
-                                     <i class="@fea.Icon"></i>
-                                     <h3><a href="">@fea.Title</a></h3>
-                                     <p>@fea.Content</p>
-                                 </div>
-                             </div>
-                        }
                         
                     }
 
@@ -141,72 +118,16 @@
                 <div class="row">
                     @foreach (Service srv in Model.Services)
                     {
-                        @if (@srv.Id == 1)
-                        {
-                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div class="icon-box">
+                        
+                          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                              <div class="icon-box">
 
-                                    <div class="icon"><i class="@srv.Icon"></i></div>
-                                    <h4><a href="">@srv.Title</a></h4>
-                                    <p>@srv.Content</p>     @*1*@
-                                </div>
-                            </div>
-                        }
-                        else if (@srv.Id == 2)
-                        {
-                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div class="icon-box">
-
-                                    <div class="icon"><i class="@srv.Icon"></i></div>
-                                    <h4><a href="">@srv.Title</a></h4>
-                                    <p>@srv.Content</p>     @*1*@
-                                </div>
-                            </div>
-                        }
-                        else if (@srv.Id == 3)
-                        {
-                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div class="icon-box">
-
-                                    <div class="icon"><i class="@srv.Icon"></i></div>
-                                    <h4><a href="">@srv.Title</a></h4>
-                                    <p>@srv.Content</p>     @*1*@
-                                </div>
-                            </div>
-                        }
-                        else if (@srv.Id == 4)
-                        {
-                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div class="icon-box">
-
-                                    <div class="icon"><i class="@srv.Icon"></i></div>
-                                    <h4><a href="">@srv.Title</a></h4>
-                                    <p>@srv.Content</p>     @*1*@
-                                </div>
-                            </div>
-                        }
-                        else if (@srv.Id == 5)
-                        {
-                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div class="icon-box">
-
-                                    <div class="icon"><i class="@srv.Icon"></i></div>
-                                    <h4><a href="">@srv.Title</a></h4>
-                                    <p>@srv.Content</p>     @*1*@
-                                </div>
-                            </div>
-                        }
-                        else 
-                        {
-                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div class="icon-box">
-
-                                    <div class="icon"><i class="@srv.Icon"></i></div>
-                                    <h4><a href="">@srv.Title</a></h4>
-                                    <p>@srv.Content</p>     @*1*@
-                                </div>
-                            </div>
-                        }
+                                  <div class="icon"><i class="@srv.Icon"></i></div>
+                                  <h4><a href="">@srv.Title</a></h4>
+                                  <p>@srv.Content</p>     @*1*@
+                              </div>
+                          </div>
+                        
 
 
                     }
